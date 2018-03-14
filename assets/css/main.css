@@ -3252,16 +3252,23 @@
 			background-color: #261c3e;
 		}
 
+		.wrapper.styleIntro {
+			background-color: #031b2d;
+		}
+
 		.wrapper.style1 {
-			background-color: #5e42a6;
+			/*background-color: #5e42a6;*/
+			background-color: #574e34;
 		}
 
 		.wrapper.style1-alt {
-			background-color: #493382;
+			/*background-color: #493382;*/
+			background-color: #031b2d;
 		}
 
 		.wrapper.style2 {
-			background-color: #5052b5;
+			/*background-color: #5052b5;*/
+			background-color: #0e3449;
 		}
 
 		.wrapper.style2-alt {
@@ -3269,11 +3276,16 @@
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			/*background-color: #b74e91;*/
+			background-color: #231332;
 		}
 
 		.wrapper.style3-alt {
 			background-color: #953d75;
+		}
+
+		.wrapper.style4 {
+			background-color: #224935;
 		}
 
 		.wrapper.fullscreen {
@@ -3295,6 +3307,8 @@
 			body.is-ie .wrapper.fullscreen {
 				height: 100vh;
 			}
+
+		 .LogoInner {display: none;}
 
 			@media screen and (max-width: 1280px) {
 
@@ -3535,7 +3549,7 @@
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
 		/*background: #312450*/;
-		background: #23843D;
+		background: #113319;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3569,7 +3583,8 @@
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			min-height: 100%;
+/* Commented by ACM
+			min-height: 100%;*/
 			opacity: 1;
 			width: 100%;
 		}
@@ -3814,6 +3829,9 @@
 		}
 
 		@media screen and (max-width: 1280px) {
+			
+			.LogoMain {display: none;}
+			.LogoInner {display: inherit;}
 
 			#sidebar {
 				height: 3.5em;
