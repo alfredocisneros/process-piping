@@ -1739,7 +1739,7 @@
 			}
 
 	h2 {
-		font-size: 1.75em;
+		font-size: 1.75em;color: #e3e3e3 !important;
 	}
 
 	h3 {
@@ -2053,6 +2053,7 @@
 		flex-wrap: wrap;
 		border-radius: 0.25em;
 		border: solid 1px rgba(255, 255, 255, 0.15);
+		/*background: rgba(255, 255, 255, 0.05);*/
 		background: rgba(255, 255, 255, 0.05);
 		margin: 0 0 2em 0;
 	}
@@ -2558,6 +2559,17 @@
 			margin: 0 0 1.3em 0;
 		}
 
+		.icon.majorMenu {
+			width: 2.5em;
+			height: 2.5em;
+			display: block;
+			background: #f2f0f0;
+			border-radius: 100%;
+			color: #23843D;
+			text-align: center;
+			line-height: 2.5em;
+			margin: 0 0 1.3em 0;
+		}
 			.icon.major:before {
 				font-size: 1.25em;
 			}
@@ -2579,7 +2591,8 @@
 				}
 
 				.wrapper.style3 .icon.major:before {
-					color: #b74e91;
+					/*color: #b74e91;*/
+					color: #9990a1;
 				}
 
 				.wrapper.style3-alt .icon.major:before {
@@ -3038,7 +3051,8 @@
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				/*background: rgba(49, 36, 80, 0.9);*/
+				background: rgba(78,87,92,0.87);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3253,22 +3267,22 @@
 		}
 
 		.wrapper.styleIntro {
-			background-color: #031b2d;
+			background-color: #084F25;
 		}
 
 		.wrapper.style1 {
 			/*background-color: #5e42a6;*/
-			background-color: #574e34;
+			background-color: #b4ab92;
 		}
 
 		.wrapper.style1-alt {
 			/*background-color: #493382;*/
-			background-color: #031b2d;
+			background-color: #92a597;
 		}
 
 		.wrapper.style2 {
 			/*background-color: #5052b5;*/
-			background-color: #0e3449;
+			background-color: #7e919b;
 		}
 
 		.wrapper.style2-alt {
@@ -3277,7 +3291,7 @@
 
 		.wrapper.style3 {
 			/*background-color: #b74e91;*/
-			background-color: #231332;
+			background-color: #9990a1;
 		}
 
 		.wrapper.style3-alt {
@@ -3285,7 +3299,7 @@
 		}
 
 		.wrapper.style4 {
-			background-color: #224935;
+			background-color: #727272;
 		}
 
 		.wrapper.fullscreen {
@@ -3528,7 +3542,7 @@
 		}
 
 	#footer > .inner a {
-		border-bottom-color: rgba(255, 255, 255, 0.15);
+		border-bottom-color: rgba(255, 255, 255, 0.8);
 	}
 
 		#footer > .inner a:hover {
@@ -3537,7 +3551,7 @@
 
 	#footer > .inner .menu {
 		font-size: 0.8em;
-		color: rgba(255, 255, 255, 0.15);
+		color: #fff;
 	}
 
 	#header + #wrapper + #footer > .inner {
@@ -3549,7 +3563,7 @@
 	#sidebar {
 		padding: 2.5em 2.5em 0.5em 2.5em ;
 		/*background: #312450*/;
-		background: #113319;
+		background: #e3e3e3;
 		cursor: default;
 		height: 100vh;
 		left: 0;
@@ -3597,6 +3611,10 @@
 			list-style: none;
 			padding: 0;
 		}
+
+#sidebar nav > ul > li .scrolly:hover {background-color: #084f25; color:#fff !important; }
+
+#sidebar nav > ul > li .scrolly {padding-right: 5px}
 
 			#sidebar nav > ul > li {
 				-moz-transform: translateY(0);
@@ -3763,7 +3781,7 @@
 			-ms-transition: color 0.2s ease;
 			transition: color 0.2s ease;
 			border: 0;
-			color: rgba(255, 255, 255, 0.35);
+			color: #4e4d49;
 			display: block;
 			font-size: 0.6em;
 			font-weight: bold;
@@ -3777,10 +3795,10 @@
 		}
 
 			#sidebar nav a:before, #sidebar nav a:after {
-				border-radius: 0.2em;
+				/*border-radius: 0.2em;
 				bottom: 0;
-				content: '';
-				height: 0.2em;
+				content: '';*/
+				height: 0.1em;
 				position: absolute;
 				right: 0;
 				width: 100%;
@@ -3788,7 +3806,7 @@
 
 			#sidebar nav a:before {
 				/*background: #3c2c62;*/
-				background: #1e5d2f;
+				background: #a49e88;
 			}
 
 			#sidebar nav a:after {
@@ -3796,7 +3814,7 @@
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
 				/*background-image: linear-gradient(to right, #5e42a6, #b74e91);*/
-				background-image: linear-gradient(to right, #abe18a, #5cb74e);
+				background-image: linear-gradient(to right, #abe18a, #585a57);
 				-moz-transition: max-width 0.2s ease;
 				-webkit-transition: max-width 0.2s ease;
 				-ms-transition: max-width 0.2s ease;
@@ -3805,11 +3823,12 @@
 			}
 
 			#sidebar nav a:hover {
-				color: rgba(255, 255, 255, 0.55);
+				/*color: rgba(255, 255, 255, 0.55);*/
+				color: #667269;
 			}
 
 			#sidebar nav a.active {
-				color: #ffffff;
+				color: #23843d;
 			}
 
 				#sidebar nav a.active:after {
@@ -3831,7 +3850,7 @@
 		@media screen and (max-width: 1280px) {
 			
 			.LogoMain {display: none;}
-			.LogoInner {display: inherit;}
+			.LogoInner {display: block; margin-top: -45px; margin-bottom: 40px; width: 90%; height: auto}
 
 			#sidebar {
 				height: 3.5em;
@@ -3912,7 +3931,8 @@
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			font-size: 1em;
+			color: #ddd !important;
 		}
 
 			@media screen and (max-width: 980px) {
